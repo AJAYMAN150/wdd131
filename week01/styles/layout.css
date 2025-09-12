@@ -1,0 +1,49 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Grid Layout */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navigation with Flexbox */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main 3-Column Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+main section {
+  background: #f0f0f0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
