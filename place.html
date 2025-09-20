@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nara Park, Japan</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nara Park</h1>
+    <h2>Japan</h2>
+  </header>
+
+  <main>
+    <!-- Hero image with srcset -->
+    <picture>
+      <source srcset="images/nara-large.webp" media="(min-width: 900px)">
+      <source srcset="images/nara-medium.webp" media="(min-width: 600px)">
+      <img src="images/nara-small.webp" alt="Nara Park with deer and cherry blossoms" class="hero">
+    </picture>
+
+    <!-- Weather Section -->
+    <section class="weather">
+      <h3>Weather</h3>
+      <!-- SVG in mobile view -->
+      <img src="images/sun-cloud.svg" alt="Weather icon" class="weather-icon-mobile">
+      <ul>
+        <li>Temperature: <span id="temperature">12</span> °C</li>
+        <li>Wind Speed: <span id="windSpeed">8</span> km/h</li>
+        <li>Wind Chill: <span id="windChill">N/A</span></li>
+      </ul>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+      <h3>About Nara Park</h3>
+      <p>
+        Nara Park, located in the city of Nara, Japan, is famous for its freely roaming deer, historic temples, and
+        beautiful landscapes. It is home to Todai-ji Temple, which houses the Great Buddha statue, and is a popular
+        destination for cherry blossom viewing in spring.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
