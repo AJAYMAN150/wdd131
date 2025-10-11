@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the exciting gameplay mechanics of Dynasty Warriors." />
+  <title>Dynasty Warriors | Gameplay</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Dynasty Warriors</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="characters.html">Characters</a>
+      <a class="active" href="gameplay.html">Gameplay</a>
+      <a href="references.html">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Gameplay Overview</h2>
+      <p>
+        The <strong>Dynasty Warriors</strong> series is known for its intense hack-and-slash
+        action, where players battle thousands of enemies on vast battlefields inspired
+        by the Romance of the Three Kingdoms era. Each warrior has unique moves, weapons,
+        and Musou attacks that unleash powerful combos.
+      </p>
+    </section>
+
+    <section class="gallery">
+      <img src="images/gameplay1.jpg" alt="Warrior fighting in open battlefield" loading="lazy" />
+      <img src="images/gameplay2.jpg" alt="Character performing a Musou attack" loading="lazy" />
+      <img src="images/gameplay3.jpg" alt="Battle scene with multiple enemies" loading="lazy" />
+    </section>
+
+    <section class="interaction">
+      <h2>Choose Your Favorite Weapon</h2>
+      <p>Select a weapon type to see its style:</p>
+
+      <select id="weaponSelect">
+        <option value="">-- Select a Weapon --</option>
+        <option value="sword">Sword</option>
+        <option value="spear">Spear</option>
+        <option value="dual">Dual Blades</option>
+        <option value="bow">Bow</option>
+      </select>
+
+      <div id="weaponInfo" class="info-box"></div>
+    </section>
+
+    <section class="feedback">
+      <h2>Tell Us What You Think!</h2>
+      <form id="feedbackForm">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="favChar">Favorite Character:</label>
+        <input type="text" id="favChar" name="favChar" />
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="thankYouMessage" class="hidden">Thanks for your feedback!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dynasty Warriors Fan Site | <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
